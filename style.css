@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+html {
+    scroll-behavior: smooth;
+    --basicColor: #6157AB;
+    background: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    position: relative;
+    width: 1200px;
+    height: 5433px;
+    margin: 0 auto;
+    background: #fff;
+    font-family: 'Roboto';
+}
+.header {
+    display: flex;
+    background: #8d8d8d;
+    height: 84px;
+    justify-content: end;
+    align-items: center;
+}
+.header-content {
+    gap: 44px;
+    display: flex;
+    margin-right: 59px;
+}
+.header-links {
+    gap: 68px;
+    display: flex;
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+}
+.header-links li a {
+    color: #636769;
+}
+.sign-up {
+    width: 158px;
+    height: 54px;
+    border-radius: 5px;
+    background: var(--basicColor);
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+}
+.sign-up:hover {
+    background: #766bcc;
+}
+.sign-up:active {
+    transform:scale(102%)
+}
