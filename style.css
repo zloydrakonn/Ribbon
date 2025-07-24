@@ -128,5 +128,179 @@ a {
 .techcrunch {
     display: flex;
     align-self: center;
+}
+.who-we-empower {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1213px;
+    background: #F5F4F2;
+;
+    
+}
+.empower-header {
+    padding-top: 72px;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 64.8px;
+    letter-spacing: 0.68px;
+    color: #333333;
+}
+.empowering-buttons {
+    display: flex;
+    padding-top: 47px;
+    gap: 25px;
+}
 
+
+.empowering-button {
+    padding: 15px 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2.32px;
+    border-radius: 6.8px;
+    color: #7A858A;
+    background: white;
+    cursor: pointer;
+    border: solid#AAB8BF 1px;
+}
+.empowering-button:hover {
+    background: #f1effa;
+}
+.empowering-button:active {
+    transform:scale(102%)
+}
+.active-empowering-button {
+    border: solid var(--basicColor) 1px;
+    background: #ECEAF8;
+    color: var(--basicColor);
+}
+.active-empowering-button:hover {
+    background: #e3e0f8;
+}
+.buyers-agents {
+    display: flex;
+    margin-top: auto;
+    width: 1080px;
+    height: 914px;
+    background: white;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+.buyers-agents-img {
+    padding: 75px 74px;
+    align-self: start;
+}
+.buyers-certify {
+    display: flex;
+    flex-direction: column;
+    margin-top: 74px;
+    width: 381px; 
+    height: 494px;
+    border-top: solid #C9D3D9 1px;
+}
+.buyers-text {
+    padding-top: 33px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2.32px;
+    color: #574D9C;
+}
+.certainty-of-cash {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #363B3D;
+    padding-top: 97px;
+}
+.strongest-offer {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: #636769;
+    padding-top: 32px;
+}
+.get-certified-mod {
+    margin-top: auto;
+    width: 223px;
+    height: 54px;
+}
+.agents-pluses {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 259px;
+    width: 932px;
+    top: 1862px;
+    left: 134px;
+    border-top: solid #C9D3D9 1px;
+    flex-wrap: wrap;
+}
+.dollar{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background: #574D9C;
+    justify-content: center;
+    align-items: center;    
+}
+.writing{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background: #574D9C;
+    justify-content: center;
+    align-items: center;   
+}
+.dollarhouse {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background: #574D9C;
+    justify-content: center;
+    align-items: center;   
+}
+.agents-pluses-subtext {
+    position: absolute;
+    display: flex;
+    padding-top: 151px;
+    padding-right: 10px;
+    align-self: center;
+    justify-content: space-around;
+    gap: 155px;
+}
+.agents-plus-subtext {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.9px;
+    letter-spacing: 2px;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--basicColor);
+}
+.agents-plus-subtext:first-child {
+    position: absolute;
+    margin-right: 610px;
+}
+
+.agents-plus-subtext:last-child {
+    position: absolute;
+    margin-left: 635px; 
+}
+
+
+.youre-in-good-company {
+    display: flex;
+    justify-content: center;
+    height: 1014px;
+    background: #F5F4F2;
+}
+.youre-in-good-company-content {
+    display: flex;
+    width: 1080px;
+    height: 1014px;
+    background: #E3E6F9;
 }

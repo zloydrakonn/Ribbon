@@ -45,10 +45,49 @@
             </div>
         </main>
         <section class="who-we-empower">
-
+            <h2 class="empower-header">Who we empower</h2>
+            <div class="empowering-buttons">
+                <button class="active-empowering-button empowering-button">BUYER'S AGENTS</button>
+                <button class="empowering-button">BUYERS</button>
+                <button class="empowering-button">LISTING AGENTS</button>
+                <button class="empowering-button">SELLERS</button>
+                <button class="empowering-button">LOAN OFFICERS</button>
+            </div>
+            <script>
+                const buttons = document.querySelectorAll('.empowering-button');
+                buttons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        buttons.forEach(btn => {
+                            btn.classList.remove('active-empowering-button');
+                        });
+                        this.classList.add('active-empowering-button');
+                    });
+                });
+            </script>
+            <div class="buyers-agents">
+                <img src="./src/buyers-agents.png" alt="" class="buyers-agents-img">
+                <div class="buyers-certify">
+                    <p class="buyers-text">BUYERS'S AGENTS</p>
+                    <h2 class="certainty-of-cash">Give your buyers the certainty of cash</h2>
+                    <p class="strongest-offer">Waive common contingencies, including the home-sale contingency, 
+                        to allow your buyers to make their strongest offer in any market.</p>
+                    <button class="sign-up get-certified-mod">Get Certified Today</button>
+                </div>
+                <div class="agents-pluses">
+                    <div class="dollar"><img src="./src/01.svg" alt=""></div>
+                    <div class="writing"><img src="./src/02.svg" alt=""></div>
+                    <div class="dollarhouse"><img src="./src/03.svg" alt=""></div>
+                    <div class="agents-pluses-subtext">
+                        <p class="agents-plus-subtext">KEEP YOUR COMMISSION</p>
+                        <p class="agents-plus-subtext">WRITE MORE WINNING <br> OFFERS</p>
+                        <p class="agents-plus-subtext">GUARANTEED TO CLOSE</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="youre-in-good-company">
-
+            <div class="youre-in-good-company-content">
+            </div>
         </section>
         <section class="our-solutions">
 
