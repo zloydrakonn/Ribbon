@@ -286,6 +286,7 @@ a {
     margin-right: 610px;
 }
 
+
 .agents-plus-subtext:last-child {
     position: absolute;
     margin-left: 635px; 
@@ -300,7 +301,129 @@ a {
 }
 .youre-in-good-company-content {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 1080px;
     height: 1014px;
     background: #E3E6F9;
+}
+.good-company-header {
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 64.8px;
+    letter-spacing: 0.68px;
+    color: #323A5B;
+    padding-top: 72px;
+}
+.good-company-info {
+    display: flex;
+    width: 945px;
+    height: 491px;
+}
+.left-side {
+    display: flex;
+    width: 472px;
+    display: flex;
+    flex-direction: column;
+
+}
+.huge-advantage {
+    width: 436px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    width: 206px;
+    height: 72px;
+    margin-left: 173px;
+}
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 14px;
+    width: 134px;
+    height: 72px;
+}
+.edgar {
+    color: #636769;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16.5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.exp {
+    color: #636769;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.agents-love-us {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 46px;
+    height: 189px;
+    width: 439px;
+    border-top: solid #C9C9C9 1px;
+}
+.love-us {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 44px;
+    color: #363B3D;
+    width: 425px;
+    height: 60px;
+}
+.learn-more-button {
+    display: flex;
+    align-self: center;
+    margin-top: 25px;
+    padding: 13px 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2.32px;
+    border-radius: 6.8px;
+    color: #574D9C;
+    background: white;
+    cursor: pointer;
+    border: solid#574D9C 1px;
+}
+.learn-more-button:hover {
+    background: #f1effa;
+}
+.learn-more-button:active {
+    transform:scale(102%)
+}
+.general-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    width: 958px;
+    height: 250px;
+    border-top: 1px solid #B2A9EF;
+}
+.general-info p {
+    font-weight: 400;
+    font-size: 69px;
+    line-height: 30px;
+    color:#323A5B;
+}
+.general-info span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
