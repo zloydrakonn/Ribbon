@@ -3,7 +3,7 @@
 html {
     scroll-behavior: smooth;
     --basicColor: #6157AB;
-    background: #000;
+    background: #fff;
 }
 * {
   margin: 0;
