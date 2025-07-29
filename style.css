@@ -5,15 +5,19 @@ html {
     --basicColor: #6157AB;
     background: #fff;
 }
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 .container {
+    user-select: none;
     position: relative;
     width: 1200px;
     height: 5433px;
@@ -22,17 +26,24 @@ a {
     font-family: 'Roboto';
     overflow: hidden;
 }
+
+.container button {
+    font-family: 'Roboto';
+}
+
 .header {
     display: flex;
     height: 84px;
     justify-content: end;
     align-items: center;
 }
+
 .header-content {
     gap: 44px;
     display: flex;
     margin-right: 59px;
 }
+
 .header-links {
     gap: 68px;
     display: flex;
@@ -42,9 +53,11 @@ a {
     line-height: 30px;
     align-items: center;
 }
+
 .header-links li a {
     color: #636769;
 }
+
 .sign-up {
     width: 158px;
     height: 54px;
@@ -59,24 +72,29 @@ a {
     border: none;
     cursor: pointer;
 }
+
 .sign-up:hover {
     background: #766bcc;
 }
+
 .sign-up:active {
-    transform:scale(102%)
+    transform: scale(102%)
 }
+
 .main {
     display: flex;
     justify-content: end;
     align-items: end;
     height: 825px;
 }
+
 .main-content {
     display: flex;
     flex-direction: column;
     height: 742px;
     width: 1140px;
 }
+
 .families {
     position: absolute;
     width: 648px;
@@ -91,6 +109,7 @@ a {
     flex-direction: column;
     gap: 47px;
 }
+
 .main-header {
     width: 616px;
     font-weight: 400;
@@ -99,6 +118,7 @@ a {
     letter-spacing: 1px;
     color: #363B3D;
 }
+
 .main-subheader {
     font-weight: 400;
     font-size: 20px;
@@ -106,38 +126,45 @@ a {
     color: #636769;
     width: 599px;
 }
+
 .main-links {
     padding-top: 35px;
     display: flex;
     align-items: center;
     gap: 47.5px;
 }
+
 .learn-more {
-    color:var(--basicColor);
+    color: var(--basicColor);
     border-bottom: solid 1px;
 }
+
 .featured-in {
     padding-top: 119px;
     width: 580px;
 
 }
+
 .logos {
     display: flex;
     padding-top: 17px;
 }
+
 .techcrunch {
     display: flex;
     align-self: center;
 }
+
 .who-we-empower {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 1213px;
     background: #F5F4F2;
-;
-    
+    ;
+
 }
+
 .empower-header {
     padding-top: 72px;
     font-weight: 400;
@@ -146,6 +173,7 @@ a {
     letter-spacing: 0.68px;
     color: #333333;
 }
+
 .empowering-buttons {
     display: flex;
     padding-top: 47px;
@@ -165,20 +193,25 @@ a {
     cursor: pointer;
     border: solid#AAB8BF 1px;
 }
+
 .empowering-button:hover {
     background: #f1effa;
 }
+
 .empowering-button:active {
-    transform:scale(102%)
+    transform: scale(102%)
 }
+
 .active-empowering-button {
     border: solid var(--basicColor) 1px;
     background: #ECEAF8;
     color: var(--basicColor);
 }
+
 .active-empowering-button:hover {
     background: #e3e0f8;
 }
+
 .buyers-agents {
     display: flex;
     margin-top: auto;
@@ -188,18 +221,21 @@ a {
     border-top-left-radius: 19px;
     border-top-right-radius: 19px;
 }
+
 .buyers-agents-img {
     padding: 75px 74px;
     align-self: start;
 }
+
 .buyers-certify {
     display: flex;
     flex-direction: column;
     margin-top: 74px;
-    width: 381px; 
+    width: 381px;
     height: 494px;
     border-top: solid #C9D3D9 1px;
 }
+
 .buyers-text {
     padding-top: 33px;
     font-weight: 400;
@@ -208,6 +244,7 @@ a {
     letter-spacing: 2.32px;
     color: #574D9C;
 }
+
 .certainty-of-cash {
     font-weight: 400;
     font-size: 40px;
@@ -215,6 +252,7 @@ a {
     color: #363B3D;
     padding-top: 97px;
 }
+
 .strongest-offer {
     font-weight: 400;
     font-size: 21px;
@@ -222,11 +260,13 @@ a {
     color: #636769;
     padding-top: 32px;
 }
+
 .get-certified-mod {
     margin-top: auto;
     width: 223px;
     height: 54px;
 }
+
 .agents-pluses {
     display: flex;
     justify-content: space-around;
@@ -239,30 +279,34 @@ a {
     border-top: solid #C9D3D9 1px;
     flex-wrap: wrap;
 }
-.dollar{
+
+.dollar {
     display: flex;
     width: 70px;
     height: 70px;
     background: #574D9C;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
-.writing{
+
+.writing {
     display: flex;
     width: 70px;
     height: 70px;
     background: #574D9C;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
+
 .dollarhouse {
     display: flex;
     width: 70px;
     height: 70px;
     background: #574D9C;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
+
 .agents-pluses-subtext {
     position: absolute;
     display: flex;
@@ -272,6 +316,7 @@ a {
     justify-content: space-around;
     gap: 155px;
 }
+
 .agents-plus-subtext {
     font-weight: 400;
     font-size: 14px;
@@ -281,6 +326,7 @@ a {
     white-space: nowrap;
     color: var(--basicColor);
 }
+
 .agents-plus-subtext:first-child {
     position: absolute;
     margin-right: 610px;
@@ -289,7 +335,7 @@ a {
 
 .agents-plus-subtext:last-child {
     position: absolute;
-    margin-left: 635px; 
+    margin-left: 635px;
 }
 
 
@@ -299,6 +345,7 @@ a {
     height: 1014px;
     background: #F5F4F2;
 }
+
 .youre-in-good-company-content {
     display: flex;
     align-items: center;
@@ -307,6 +354,7 @@ a {
     height: 1014px;
     background: #E3E6F9;
 }
+
 .good-company-header {
     font-weight: 400;
     font-size: 51px;
@@ -315,11 +363,13 @@ a {
     color: #323A5B;
     padding-top: 72px;
 }
+
 .good-company-info {
     display: flex;
     width: 945px;
     height: 491px;
 }
+
 .left-side {
     display: flex;
     width: 472px;
@@ -327,6 +377,7 @@ a {
     flex-direction: column;
 
 }
+
 .huge-advantage {
     width: 436px;
     font-weight: 400;
@@ -334,6 +385,7 @@ a {
     line-height: 42px;
     text-align: center;
 }
+
 .profile {
     display: flex;
     align-items: center;
@@ -341,6 +393,7 @@ a {
     height: 72px;
     margin-left: 173px;
 }
+
 .profile-text {
     display: flex;
     flex-direction: column;
@@ -349,6 +402,7 @@ a {
     width: 134px;
     height: 72px;
 }
+
 .edgar {
     color: #636769;
     font-weight: 400;
@@ -357,12 +411,14 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
 .exp {
     color: #636769;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
 }
+
 .agents-love-us {
     display: flex;
     align-self: center;
@@ -373,6 +429,7 @@ a {
     width: 439px;
     border-top: solid #C9C9C9 1px;
 }
+
 .love-us {
     font-weight: 400;
     font-size: 18px;
@@ -383,6 +440,7 @@ a {
     width: 425px;
     height: 60px;
 }
+
 .learn-more-button {
     display: flex;
     align-self: center;
@@ -398,12 +456,15 @@ a {
     cursor: pointer;
     border: solid#574D9C 1px;
 }
+
 .learn-more-button:hover {
     background: #f1effa;
 }
+
 .learn-more-button:active {
-    transform:scale(102%)
+    transform: scale(102%)
 }
+
 .general-info {
     display: flex;
     justify-content: space-around;
@@ -414,16 +475,530 @@ a {
     height: 250px;
     border-top: 1px solid #B2A9EF;
 }
+
 .general-info p {
     font-weight: 400;
     font-size: 69px;
     line-height: 30px;
-    color:#323A5B;
+    color: #323A5B;
 }
+
 .general-info span {
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.our-solutions {
+    display: flex;
+    justify-content: center;
+    height: 1111px;
+    background: #F5F4F2;
+}
+
+.our-solutions-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #574D9C;
+    width: 1080px;
+    height: 1080px;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+
+.solutions-header {
+    padding-top: 72px;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 64.8px;
+    letter-spacing: 0.68px;
+    color: #FFFFFF;
+    width: 1080px;
+    text-align: center;
+}
+
+.solutions-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 958px;
+    gap: 16px;
+    display: flex;
+    margin-top: 39px;
+
+}
+
+.solutions-button {
+    padding: 15px 31px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+    color: white;
+    background: #574D9C;
+    border: 1px solid #FFFFFF;
+    border-radius: 6.8px;
+    cursor: pointer;
+}
+
+.solutions-button:hover {
+    background: #4f419c;
+}
+
+.solutions-button:active {
+    transform: scale(102%)
+}
+
+.active-solutions-button {
+    border: solid var(--basicColor) 1px;
+    background: white;
+    color: var(--basicColor);
+}
+
+.active-solutions-button:hover {
+    background: #e3e0f8;
+}
+
+.turn-an-offer {
+    display: flex;
+    justify-content: flex-start;
+    width: 752px;
+    height: 643px;
+    background: white;
+    border-radius: 12px;
+    margin-top: 88px;
+}
+
+.turn-left-side {
+    width: 357px;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrows {
+    width: 1040px;
+    align-items: start;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    margin-top: 344px;
+}
+
+.left-arrow,
+.right-arrow {
+    border: solid 1px transparent;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+    border: solid 1px white;
+}
+
+.right-arrow:active,
+.left-arrow:active {
+    transform: scale(102%)
+}
+
+.house-buyers {
+    margin-top: 32px;
+}
+
+.r-round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 42px 10px;
+    width: 40px;
+    height: 40px;
+    background: #7569CF;
+    border-radius: 100px;
+}
+
+.orlando-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -29px;
+    margin-left: 197px;
+    width: 127px;
+    height: 29px;
+    background: #333333;
+}
+
+.orlando {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16.5px;
+    letter-spacing: 2px;
+    color: #ECEAF8;
+}
+
+.home-won-with {
+    width: 324px;
+    height: 397px;
+    background: #E7ECEE45;
+}
+
+.subheader-home-won {
+    display: flex;
+    padding-top: 28px;
+    justify-content: center;
+    gap: 6.5px;
+}
+
+.home-won-line-start {
+    margin-top: 15px;
+    width: 80px;
+    height: 1px;
+    background: #C7C1F3;
+}
+
+.home-won-with-subheader {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    color: #363B3D;
+}
+
+.appraisal-protection {
+    display: flex;
+    margin-left: auto;
+    margin-right: 36px;
+    margin-top: 26px;
+}
+
+.home-won-line-long {
+    margin-left: 24px;
+    margin-top: 20px;
+    width: 284px;
+    height: 1px;
+    background: #C7C1F3;
+}
+
+.buyer,
+.seller {
+    display: flex;
+    margin-top: 29px;
+    margin-left: 24px;
+    gap: 49px;
+}
+
+.seller {
+    margin-top: 32px;
+    gap: 51px;
+}
+
+.buyer-seller-headers {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+    color: #363B3D;
+}
+
+.buyer-seller-texts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px;
+    color: #636769;
+    width: 180px;
+}
+
+.turn-right-side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 395px;
+}
+
+.turn-right-side h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: 0.16px;
+    color: #2B2B2B;
+    width: 285px;
+    margin-top: 151px;
+}
+
+.turn-right-side p {
+    color: #636769;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    width: 285px;
+    margin-top: 37px;
+}
+
+.turn-right-side button {
+    align-self: start;
+    margin-top: 66px;
+    margin-left: 54px;
+    background: #7569CF;
+    color: white;
+}
+
+.turn-right-side button:hover {
+    background: #6255c9;
+}
+
+.right-side-line {
+    width: 284px;
+    height: 1px;
+    background: #9AA6AC;
+    margin-top: 63px;
+}
+
+.read-the-success-story {
+    display: flex;
+    margin-top: 25px;
+    gap: 11px;
+    align-items: center;
+    width: 285px;
+    height: 30px;
+}
+
+.read-the-success-story a {
+    color: var(--basicColor);
+}
+
+.circles {
+    display: flex;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.circle-hollow {
+    width: 16px;
+    height: 16px;
+    background: #574D9C;
+    border-radius: 100px;
+    border: solid 1px white;
+}
+
+.circle-not-hollow {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 100px;
+    border: solid 1px white
+}
+.app-info {
+    display: flex;
+    background: #F5F4F2;
+    height: 552px;
+}
+.app-info-left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;  
+    margin: 100px 0 0 133px;
+    height: 300px;
+    width: 391px;
+}
+.app-info-left-side img {
+    display: flex;
+    width: 234px;
+    height: 64px;
+    object-fit: contain;
+    display: block;
+}
+.app-info-left-side a {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0; 
+    width: auto;
+    height: auto;
+}
+.app-info-left-side h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #363B3D;
+}
+.app-info-left-side p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #363B3D;
+}
+.phone {
+    width: 450px;
+    height: 469px;
+    align-self: end;
+}
+.footer {
+    display: flex;
+    height: 634px;
+    background: #000;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+.top-footer-part {
+    display: flex;
+    height: 452px;
+    width: 1200px;
+    padding: 59px 60px;
+}
+.top-footer-part img {
+    align-self: start;
+}
+.footer-links {
+    display: flex;
+    margin-left: 96px;
+}
+.footer-links li {
+    color: white;
+    list-style: none;
+}
+.footer-links li a {
+    color: white;
+}
+.agents, .homebuyers, .partners, .resources, .about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.agents-links, .homebuyers-links, .partners-links, .resources-links, .about-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+.agents {
+    padding-right: 64px;
+}
+.homebuyers {
+    padding-right: 9px;
+}
+.partners {
+    padding-right: 78px;
+}
+.resources {
+    padding-right: 67px;
+}
+
+
+
+
+.bottom-footer-part {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.bottom-footer-part img {
+    align-self: start;
+}
+.bottom-footer-part a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    
+}
+.bottom-footer-part p {
+    font-size: 14px;
+}
+.footer-business {
+    display: flex;
+    flex-direction: column;
+}
+.bottom-footer-part a {
+    color: white;
+}
+.copyright {
+    margin-right: 171px;
+}
+.socials {
+    display: flex;
+    gap: 53px;
+}
+.copyright-privacy {
+    margin-left: 16px;
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .buyers-agents-img {
+        width: 50%;
+    }
+    .agents-pluses {
+        width: 60%;
+    }
+    .agents-plus-subtext:first-child {
+        position: absolute;
+        margin-right: 400px;
+    }
+    .agents-plus-subtext:last-child {
+        position: absolute;
+        margin-left: 400px;
+    }
+    .huge-advantage {
+        font-size: 20px;
+        margin-left: 90px;
+        width: 350px;
+    }
+    .general-info p {
+        font-size: 45px;
+    }
+    .general-info span {
+        font-size: 10px;
+    }
+    .general-info:last-child {
+        margin-right: 5px;
+    }
+    .turn-an-offer {
+        width: 650px;
+    }
+    .arrows {
+        justify-content: space-around;
+        width: 1420px;
+    }
+    .left-arrow, .right-arrow {
+        width: 60px;
+    }
+    .app-info-left-side a {
+        width: 260px;
+    }
+    .agents, .homebuyers, .partners, .resources, .about {
+        font-size: 80%;
+    }
+    .agents-links, .homebuyers-links, .partners-links, .resources-links, .about-links {
+        font-size: 80%;
+    }
+    .agents {
+    padding-right: 20px;
+    }
+    .partners {
+        padding-right: 20px;
+    }
+    .resources {
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+        .container {
+        width: 100%;
+    }
 }

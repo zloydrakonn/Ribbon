@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./src/ribbon-logo.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -25,7 +27,7 @@
                 <img src="./src/families.png" alt="" class="families">
                 <div class="main-headers">
                     <h1 class="main-header">Providing certainty on the journey to homeownership.</h1>
-                    <h2 class="main-subheader">Guarantee your home closes with cash-backed, contingency-free 
+                    <h2 class="main-subheader">Guarantee your home closes with cash-backed, contingency-free
                         offers for buyers, sellers, their agents, and loan officers.</h2>
                 </div>
                 <div class="main-links">
@@ -53,23 +55,12 @@
                 <button class="empowering-button">SELLERS</button>
                 <button class="empowering-button">LOAN OFFICERS</button>
             </div>
-            <script>
-                const buttons = document.querySelectorAll('.empowering-button');
-                buttons.forEach(button => {
-                    button.addEventListener('click', function() {
-                        buttons.forEach(btn => {
-                            btn.classList.remove('active-empowering-button');
-                        });
-                        this.classList.add('active-empowering-button');
-                    });
-                });
-            </script>
             <div class="buyers-agents">
                 <img src="./src/buyers-agents.png" alt="" class="buyers-agents-img">
                 <div class="buyers-certify">
                     <p class="buyers-text">BUYERS'S AGENTS</p>
                     <h2 class="certainty-of-cash">Give your buyers the certainty of cash</h2>
-                    <p class="strongest-offer">Waive common contingencies, including the home-sale contingency, 
+                    <p class="strongest-offer">Waive common contingencies, including the home-sale contingency,
                         to allow your buyers to make their strongest offer in any market.</p>
                     <button class="sign-up get-certified-mod">Get Certified Today</button>
                 </div>
@@ -90,7 +81,7 @@
                 <p class="good-company-header">You’re in good company</p>
                 <div class="good-company-info">
                     <div class="left-side">
-                        <p class="huge-advantage">“Ribbon is a huge advantage for you as the buyer's agent - and 
+                        <p class="huge-advantage">“Ribbon is a huge advantage for you as the buyer's agent - and
                             definitely gives you the extra edge needed to have your buyer's offer accepted."</p>
                         <div class="profile">
                             <img src="./src/avatar.png" alt="">
@@ -101,7 +92,7 @@
 
                         </div>
                         <div class="agents-love-us">
-                            <p class="love-us">Agents love us because we empower their buyers 
+                            <p class="love-us">Agents love us because we empower their buyers
                                 with cash and don't compete for their commissions.</p>
                             <button class="learn-more-button">Learn More</button>
                         </div>
@@ -116,17 +107,145 @@
             </div>
         </section>
         <section class="our-solutions">
-
+            <div class="our-solutions-content">
+                <h2 class="solutions-header">Our Solutions</h2>
+                <div class="solutions-buttons">
+                    <button class="active-solutions-button solutions-button">Turn an offer to all cash</button>
+                    <button class="solutions-button">Buy before you sell</button>
+                    <button class="solutions-button">Save an existing deal</button>
+                </div>
+                <div class="arrows">
+                    <img src="./src/left-arrow.png" class="left-arrow" alt="" onclick="leftArrow()">
+                    <img src="./src/right-arrow.png" class="right-arrow" alt="" onclick="rightArrow()">
+                </div>
+                <div class="turn-an-offer">
+                    <div class="turn-left-side">
+                        <div class="house-buyers-all"></div>
+                        <div class="r-round"><img src="./src/letter-r.png" alt=""></div>
+                        <img src="./src/house-buyers.png" class="house-buyers" alt="">
+                        <div class="orlando-box">
+                            <p class="orlando">ORLANDO, FL</p>
+                        </div>
+                        <div class="home-won-with">
+                            <div class="subheader-home-won">
+                                <div class="home-won-line-start"></div>
+                                <p class="home-won-with-subheader">HOME WON WITH</p>
+                                <div class="home-won-line-start"></div>
+                            </div>
+                            <img src="./src/appraisal-protection.png" class="appraisal-protection" alt="">
+                            <div class="home-won-line-long"></div>
+                            <div class="buyer-seller">
+                                <div class="buyer">
+                                    <p class="buyer-seller-headers">The <br>buyer</p>
+                                    <p class="buyer-seller-texts">won her dream house in multiple-offers situation.</p>
+                                </div>
+                                <div class="seller">
+                                    <p class="buyer-seller-headers">The <br>seller</p>
+                                    <p class="buyer-seller-texts">got a guaranteed closing with no contingencies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="turn-right-side">
+                        <h2>Turn an offer to all cash</h2>
+                        <p>Once your buyer is preapproved, upgrade your
+                            buying power to cash to make your strongest offer, first.</p>
+                        <button class="learn-more-button">Learn more</button>
+                        <div class="right-side-line"></div>
+                        <div class="read-the-success-story">
+                            <img src="./src/document.png" alt="">
+                            <a href="">Read the success story</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="circles">
+                    <div class="circle-not-hollow"></div>
+                    <div class="circle-hollow"></div>
+                    <div class="circle-hollow"></div>
+                </div>
         </section>
         <section class="app-info">
+            <div class="app-info-left-side">
+            <h2>Everything you need is only a tap away</h2>
+            <p>Ribbon let’s you write an offer anytime, anywhere — right from your mobile device.</p>
+            <a href=""><img src="./src/app-store.png" alt=""></a>
+            </div>
+            <img src="./src/phone.png" alt="" class="phone">
 
         </section>
         <footer class="footer">
             <div class="footer-content">
-
+                <div class="top-footer-part">
+                    <img src="./src/ribbon-full.png" alt="">
+                    <div class="footer-links">
+                        <ul class="agents">
+                            <li>AGENTS</li>
+                            <div class="agents-links">
+                                <li><a href="">Buying</a></li>
+                                <li><a href="">Listing</a></li>
+                                <li><a href="">iOS App</a></li>
+                                <li><a href="">Get Certified</a></li>
+                            </div>
+                        </ul>
+                        <ul class="homebuyers">
+                            <li>HOMEBUYERS</li>
+                            <div class="homebuyers-links">
+                                <li><a href="">Buyers</a></li>
+                                <li><a href="">Buy Before You Sell</a></li>
+                                <li><a href="">New Construction</a></li>
+                                <li><a href="">Rescue Your Closing</a></li>
+                                <li><a href="">Sellers</a></li>
+                            </div>
+                        </ul>
+                        <ul class="partners">
+                            <li>PARTNERS</li>
+                            <div class="partners-links">
+                                <li><a href="">Lenders</a></li>
+                                <li><a href="">Builders</a></li>
+                                <li><a href="">Brokerages</a></li>
+                            </div>
+                        </ul>
+                        <ul class="resources">
+                            <li>RESOURCES</li>
+                            <div class="resources-links">
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">FAQs</a></li>
+                                <li><a href="">How it works</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Guides</a></li>
+                                <li><a href="">Webinars</a></li>
+                            </div>
+                        </ul>
+                        <ul class="about">
+                            <li>ABOUT</li>
+                            <div class="about-links">
+                                <li><a href="">Mission</a></li>
+                                <li><a href="">Culture</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Press</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-footer-part">
+                    <div class="footer-business">
+                        <a href=""><img src="./src/accredited-business.png" alt=""></a>
+                        <a href="">Click for Review</a>
+                    </div>
+                    <div class="copyright">
+                        <a href="">Terms</a>
+                        <a href="" class="copyright-privacy">Privacy</a>
+                        <p>Copyright 2022 Ribbon Home Inc, All Rights Reserved.</p>
+                    </div>
+                    <div class="socials">
+                        <img src="./src/facebook.png" alt="">
+                        <img src="./src/instagram.png" alt="">
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
