@@ -16,3 +16,11 @@ solutionsButtons.forEach(button => {
         this.classList.add('active-solutions-button');
     });
 });
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loadingspinner');
+    const container = document.querySelector('.container');
+    setTimeout(() => {
+        loader.style.opacity = '0';
+        container.style.opacity = '1';
+    }, 2000); // 2 секунди
+});

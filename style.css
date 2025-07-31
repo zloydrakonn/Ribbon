@@ -16,7 +16,265 @@ a {
     text-decoration: none;
 }
 
+/* From Uiverse.io by Nawsome */
+.loadingspinner {
+
+    --square: 26px;
+    --offset: 30px;
+    --duration: 2.4s;
+    --delay: 0.2s;
+    --timing-function: ease-in-out;
+    --in-duration: 0.4s;
+    --in-delay: 0.1s;
+    --in-timing-function: ease-out;
+    width: calc(3 * var(--offset) + var(--square));
+    height: calc(2 * var(--offset) + var(--square));
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -60px;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+.loadingspinner div {
+    
+    display: inline-block;
+    background: darkorange;
+    /*background: var(--text-color);*/
+    /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);*/
+    border: none;
+    border-radius: 2px;
+    width: var(--square);
+    height: var(--square);
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    font-size: 6pt;
+    color: black;
+}
+
+.loadingspinner #square1 {
+    left: calc(0 * var(--offset));
+    top: calc(0 * var(--offset));
+    animation: square1 var(--duration) var(--delay) var(--timing-function) infinite,
+        squarefadein var(--in-duration) calc(1 * var(--in-delay)) var(--in-timing-function) both;
+}
+
+.loadingspinner #square2 {
+    left: calc(0 * var(--offset));
+    top: calc(1 * var(--offset));
+    animation: square2 var(--duration) var(--delay) var(--timing-function) infinite,
+        squarefadein var(--in-duration) calc(1 * var(--in-delay)) var(--in-timing-function) both;
+}
+
+.loadingspinner #square3 {
+    left: calc(1 * var(--offset));
+    top: calc(1 * var(--offset));
+    animation: square3 var(--duration) var(--delay) var(--timing-function) infinite,
+        squarefadein var(--in-duration) calc(2 * var(--in-delay)) var(--in-timing-function) both;
+}
+
+.loadingspinner #square4 {
+    left: calc(2 * var(--offset));
+    top: calc(1 * var(--offset));
+    animation: square4 var(--duration) var(--delay) var(--timing-function) infinite,
+        squarefadein var(--in-duration) calc(3 * var(--in-delay)) var(--in-timing-function) both;
+}
+
+.loadingspinner #square5 {
+    left: calc(3 * var(--offset));
+    top: calc(1 * var(--offset));
+    animation: square5 var(--duration) var(--delay) var(--timing-function) infinite,
+        squarefadein var(--in-duration) calc(4 * var(--in-delay)) var(--in-timing-function) both;
+}
+
+@keyframes square1 {
+    0% {
+        left: calc(0 * var(--offset));
+        top: calc(0 * var(--offset));
+    }
+
+    8.333% {
+        left: calc(0 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    100% {
+        left: calc(0 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+}
+
+@keyframes square2 {
+    0% {
+        left: calc(0 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    8.333% {
+        left: calc(0 * var(--offset));
+        top: calc(2 * var(--offset));
+    }
+
+    16.67% {
+        left: calc(1 * var(--offset));
+        top: calc(2 * var(--offset));
+    }
+
+    25.00% {
+        left: calc(1 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    83.33% {
+        left: calc(1 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    91.67% {
+        left: calc(1 * var(--offset));
+        top: calc(0 * var(--offset));
+    }
+
+    100% {
+        left: calc(0 * var(--offset));
+        top: calc(0 * var(--offset));
+    }
+}
+
+@keyframes square3 {
+
+    0%,
+    100% {
+        left: calc(1 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    16.67% {
+        left: calc(1 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    25.00% {
+        left: calc(1 * var(--offset));
+        top: calc(0 * var(--offset));
+    }
+
+    33.33% {
+        left: calc(2 * var(--offset));
+        top: calc(0 * var(--offset));
+    }
+
+    41.67% {
+        left: calc(2 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    66.67% {
+        left: calc(2 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    75.00% {
+        left: calc(2 * var(--offset));
+        top: calc(2 * var(--offset));
+    }
+
+    83.33% {
+        left: calc(1 * var(--offset));
+        top: calc(2 * var(--offset));
+    }
+
+    91.67% {
+        left: calc(1 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+}
+
+@keyframes square4 {
+    0% {
+        left: calc(2 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    33.33% {
+        left: calc(2 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    41.67% {
+        left: calc(2 * var(--offset));
+        top: calc(2 * var(--offset));
+    }
+
+    50.00% {
+        left: calc(3 * var(--offset));
+        top: calc(2 * var(--offset));
+    }
+
+    58.33% {
+        left: calc(3 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    100% {
+        left: calc(3 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+}
+
+@keyframes square5 {
+    0% {
+        left: calc(3 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    50.00% {
+        left: calc(3 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    58.33% {
+        left: calc(3 * var(--offset));
+        top: calc(0 * var(--offset));
+    }
+
+    66.67% {
+        left: calc(2 * var(--offset));
+        top: calc(0 * var(--offset));
+    }
+
+    75.00% {
+        left: calc(2 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+
+    100% {
+        left: calc(2 * var(--offset));
+        top: calc(1 * var(--offset));
+    }
+}
+
+@keyframes squarefadein {
+    0% {
+        transform: scale(0.75);
+        opacity: 0.0;
+    }
+
+    100% {
+        transform: scale(1.0);
+        opacity: 1.0;
+    }
+}
+
 .container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     user-select: none;
     position: relative;
     width: 1200px;
@@ -793,20 +1051,23 @@ a {
     border-radius: 100px;
     border: solid 1px white
 }
+
 .app-info {
     display: flex;
     background: #F5F4F2;
     height: 552px;
 }
+
 .app-info-left-side {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;  
+    gap: 40px;
     margin: 100px 0 0 133px;
     height: 300px;
     width: 391px;
 }
+
 .app-info-left-side img {
     display: flex;
     width: 234px;
@@ -814,13 +1075,15 @@ a {
     object-fit: contain;
     display: block;
 }
+
 .app-info-left-side a {
     display: block;
     flex-shrink: 0;
-    flex-grow: 0; 
+    flex-grow: 0;
     width: auto;
     height: auto;
 }
+
 .app-info-left-side h2 {
     font-weight: 400;
     font-size: 40px;
@@ -828,6 +1091,7 @@ a {
     text-align: center;
     color: #363B3D;
 }
+
 .app-info-left-side p {
     font-weight: 400;
     font-size: 20px;
@@ -835,41 +1099,54 @@ a {
     text-align: center;
     color: #363B3D;
 }
+
 .phone {
     width: 450px;
     height: 469px;
     align-self: end;
 }
+
 .footer {
     display: flex;
     height: 634px;
     background: #000;
 }
+
 .footer-content {
     display: flex;
     flex-direction: column;
 }
+
 .top-footer-part {
     display: flex;
     height: 452px;
     width: 1200px;
     padding: 59px 60px;
 }
+
 .top-footer-part img {
     align-self: start;
 }
+
 .footer-links {
     display: flex;
     margin-left: 96px;
 }
+
 .footer-links li {
     color: white;
     list-style: none;
 }
+
 .footer-links li a {
     color: white;
 }
-.agents, .homebuyers, .partners, .resources, .about {
+
+.agents,
+.homebuyers,
+.partners,
+.resources,
+.about {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -878,7 +1155,12 @@ a {
     line-height: 30px;
     letter-spacing: 1px;
 }
-.agents-links, .homebuyers-links, .partners-links, .resources-links, .about-links {
+
+.agents-links,
+.homebuyers-links,
+.partners-links,
+.resources-links,
+.about-links {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -886,15 +1168,19 @@ a {
     font-size: 18px;
     line-height: 30px;
 }
+
 .agents {
     padding-right: 64px;
 }
+
 .homebuyers {
     padding-right: 9px;
 }
+
 .partners {
     padding-right: 78px;
 }
+
 .resources {
     padding-right: 67px;
 }
@@ -907,98 +1193,134 @@ a {
     justify-content: space-around;
     color: white;
 }
+
 .bottom-footer-part img {
     align-self: start;
 }
+
 .bottom-footer-part a {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    
+
 }
+
 .bottom-footer-part p {
     font-size: 14px;
 }
+
 .footer-business {
     display: flex;
     flex-direction: column;
 }
+
 .bottom-footer-part a {
     color: white;
 }
+
 .copyright {
     margin-right: 171px;
 }
+
 .socials {
     display: flex;
     gap: 53px;
 }
+
 .copyright-privacy {
     margin-left: 16px;
 }
+
 @media screen and (max-width: 1200px) {
     .container {
         width: 100%;
     }
+
     .buyers-agents-img {
         width: 50%;
     }
+
     .agents-pluses {
         width: 60%;
     }
+
     .agents-plus-subtext:first-child {
         position: absolute;
         margin-right: 400px;
     }
+
     .agents-plus-subtext:last-child {
         position: absolute;
         margin-left: 400px;
     }
+
     .huge-advantage {
         font-size: 20px;
         margin-left: 90px;
         width: 350px;
     }
+
     .general-info p {
         font-size: 45px;
     }
+
     .general-info span {
         font-size: 10px;
     }
+
     .general-info:last-child {
         margin-right: 5px;
     }
+
     .turn-an-offer {
         width: 650px;
     }
+
     .arrows {
         justify-content: space-around;
         width: 1420px;
     }
-    .left-arrow, .right-arrow {
+
+    .left-arrow,
+    .right-arrow {
         width: 60px;
     }
+
     .app-info-left-side a {
         width: 260px;
     }
-    .agents, .homebuyers, .partners, .resources, .about {
+
+    .agents,
+    .homebuyers,
+    .partners,
+    .resources,
+    .about {
         font-size: 80%;
     }
-    .agents-links, .homebuyers-links, .partners-links, .resources-links, .about-links {
+
+    .agents-links,
+    .homebuyers-links,
+    .partners-links,
+    .resources-links,
+    .about-links {
         font-size: 80%;
     }
+
     .agents {
-    padding-right: 20px;
+        padding-right: 20px;
     }
+
     .partners {
         padding-right: 20px;
     }
+
     .resources {
         padding-right: 20px;
     }
 }
+
 @media screen and (max-width: 767px) {
-        .container {
+    .container {
         width: 100%;
     }
 }
